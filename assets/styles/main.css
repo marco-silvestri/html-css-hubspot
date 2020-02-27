@@ -6,15 +6,23 @@
   box-sizing: border-box;
 }
 
-footer,
+header,
 section {
-  height: 100vh;
+  height: calc(100vh - 2%);
+}
+
+a {
+  text-decoration: none;
 }
 
 /*Utilites*/
 
 .lx {
   float: left;
+}
+
+.block {
+  display: block;
 }
 
 .clearfix::after{
@@ -72,6 +80,17 @@ section {
   background-color: black;
 }
 
+/*Typography*/
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: 'Muli', sans-serif;
+}
+
 /*Buttons*/
 
 .btn{
@@ -83,6 +102,10 @@ section {
 }
 
 .btn-large {
+
+}
+
+.btn-contacts {
 
 }
 
@@ -156,4 +179,16 @@ section {
   height: 1px;
   color: lime;
   background-color: lime;
+}
+
+/*Footer*/
+
+.h4-footer {
+
+}
+
+.p-link {
+}
+
+.social-icon {
 }
