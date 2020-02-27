@@ -15,6 +15,16 @@ a {
   text-decoration: none;
 }
 
+/* FA render*/
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
 /*Utilites*/
 
 .lx {
@@ -25,10 +35,23 @@ a {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+  margin: 5px;
+}
+
 .clearfix::after{
   display: table;
   content: "";
   clear: both;
+}
+
+.spacer-top {
+  margin-top: 5%;
+}
+
+.spacer-btm {
+  margin-bottom: 5%;
 }
 
 .container {
@@ -46,7 +69,7 @@ a {
 }
 
 .paddingY {
-  padding: 2%;
+  padding: 2% 0;
 }
 
 /*Columns*/
@@ -56,7 +79,6 @@ a {
 }
 
 .col-2r {
-  width: 50%;
   float: right;
   text-align: right;
 }
@@ -89,20 +111,43 @@ h4,
 p,
 a {
   font-family: 'Muli', sans-serif;
+  color: #32495b;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+h1,
+p {
+  line-height: 1.5;
+}
+
+.discl {
+  font-size: 10px;
 }
 
 /*Buttons*/
 
 .btn{
-
+  display: inline-block;
+  background-color: #fafcfe;
+  color: #fe775a;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #fe775a;
+  border-radius: 5px;
 }
 
 .btn-orange {
-
+  background-color: #fe775a;
+  color: #fafcfe;
 }
 
 .btn-large {
-
+  padding: 15px 30px;
+  margin: 0;
 }
 
 .btn-contacts {
@@ -112,7 +157,7 @@ a {
 /*Colors*/
 
 .bg-gray {
-  background-color: #CCC;
+  background-color: #f4f9fd;
 }
 
 .bg-gradient {
@@ -124,7 +169,7 @@ a {
 }
 
 .bg-orange {
-  background-color: #f5e2d0;
+  background-color: #fff1ee;
 }
 
 .bg-dgray {
@@ -153,6 +198,11 @@ a {
   width: 25%;
 }
 
+.logo {
+  content: url("../img/logo.svg");
+  width: 30px;
+}
+
 /*Borders*/
 
 .tinywhite {
@@ -161,14 +211,60 @@ a {
 /*TOP NAV*/
 
 .top-nav {
-  height: 60px; /*hight will be dictated by content. now is a ph*/
-  background-color: #000;
+  border-bottom: 2px solid #32495b;
 }
 
-/*Jumbotron*/
+.menu-item {
+  list-style: none;
+  font-size: 18px;
+}
+
+.dropdown::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  padding: 0 5px;
+  color: #32495b;
+}
+
+.pipe::before {
+  content: "|";
+  padding: 0 15px;
+  font-family: 'Muli', sans-serif;
+  color: #32495b;
+  weight: 900;
+}
+
+.language::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f7a2";
+  padding-right: 5px;
+  color: #32495b;
+ }
+
+ .btn-search {
+  color: #15acc3;
+}
+
+/*Jumbotron & header*/
+
+
 
 #jumbotron {
-  height: 100vh;
+  height: 95vh;
+  background-image: url("../img/jumbotron.png");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 100% -1%;
+}
+
+.jumbotron-btm {
+  width: 100vw;
+  height: 10vh;
+  background-color: #afebe4;
+  border-top: 2px solid #33475b;
+  border-bottom: 2px solid #33475b;
 }
 
 /* Widgets*/
