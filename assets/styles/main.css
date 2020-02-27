@@ -1,7 +1,20 @@
+/*General*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+footer,
+section {
+  height: 100vh;
+}
+
+/*Utilites*/
+
+.lx {
+  float: left;
 }
 
 .clearfix::after{
@@ -14,6 +27,62 @@
   width: 80%;
   margin:auto;
 }
+
+.centered {
+  text-align: center;
+}
+
+.paddingY {
+  padding: 2%;
+}
+
+/*Columns*/
+
+.col-2 {
+  width: 50%;
+}
+
+.col-2r {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.col-3{
+  width: calc(100% / 3);
+}
+
+.col-4 {
+  width: calc(100% / 4);
+  height: 80vh;
+  background-color: #000;
+}
+
+.col-1trd {
+  width: calc(100% / 3);
+  background-color: white;
+}
+
+.col-2trd {
+  width: calc((100% / 3)*2);
+  background-color: black;
+}
+
+/*Buttons*/
+
+.btn{
+
+}
+
+.btn-orange {
+
+}
+
+.btn-large {
+
+}
+
+/*Colors*/
 
 .bg-gray {
   background-color: #CCC;
@@ -35,30 +104,14 @@
   background-color: #555;
 }
 
-.col-2l {
-  width: 50%;
-  float: left;
+/*Images*/
+
+.img-big {
+  height: 100px;
 }
 
-.col-2r {
-  width: 50%;
-  float: right;
-  text-align: right;
-}
-
-.col-4 {
-  width: calc(100% / 4);
-  float: left;
-  height: 80vh;
-  background-color: #000;
-  content: '';
-}
-
-/*General*/
-
-footer,
-section {
-  height: 100vh;
+.img-small {
+  height: 50px;
 }
 
 /*TOP NAV*/
@@ -72,4 +125,14 @@ section {
 
 #jumbotron {
   height: 100vh;
+}
+
+/* Widgets*/
+
+.h4::after {
+  content: "";
+  width: 80%;
+  height: 1px;
+  color: lime;
+  background-color: lime;
 }
