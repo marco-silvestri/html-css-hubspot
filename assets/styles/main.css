@@ -37,7 +37,6 @@ a {
 
 .inline-block {
   display: inline-block;
-  margin: 5px;
 }
 
 .clearfix::after{
@@ -79,6 +78,7 @@ a {
 }
 
 .col-2r {
+  width: 50%;
   float: right;
   text-align: right;
 }
@@ -131,12 +131,12 @@ p {
 /*Buttons*/
 
 .btn{
-  display: inline-block;
   background-color: #fafcfe;
   color: #fe775a;
-  padding: 10px;
+  font-size: 14px;
+  padding: 5px 20px;
   margin: 10px;
-  border: 2px solid #fe775a;
+  border: 1px solid #fe775a;
   border-radius: 5px;
 }
 
