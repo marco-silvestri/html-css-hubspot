@@ -82,7 +82,7 @@ a {
 }
 
 .paddingY {
-  padding: 2% 0;
+  padding: 3% 0;
 }
 
 /*Columns*/
@@ -187,7 +187,13 @@ h4 {
 }
 
 .btn-contacts {
-
+  display: inline;
+  background-color: #dadee0;
+  color: #32495b;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
 }
 
 /*Colors*/
@@ -209,7 +215,7 @@ h4 {
 }
 
 .bg-dgray {
-  background-color: #555;
+  background-color: #32495b;
 }
 
 .box-fill {
@@ -236,11 +242,7 @@ h4 {
 }
 
 .img-lilliput {
-  width: 25%;
-}
-
-.img-adapt {
-
+  max-width: 100px;
 }
 
 .logo {
@@ -384,14 +386,37 @@ h4 {
   border-right: 1px solid transparent;
 }
 
+/*Testimonals*/
+
+#testimonials .col-4 {
+  float: left;
+}
+
+.mover {
+  padding-top: 50px;
+}
+
 /*Footer*/
 
 .h4-footer {
-
+ font-size: 16px;
+ color: #FFF;
+ font-weight: bold;
+ padding-bottom: 40px;
 }
 
 .p-link {
+  font-size: 15px;
+  color: #cad5e1;
+  line-height: 2;
 }
 
 .social-icon {
+  color: #cbd6e2;
+  padding-right: 20px;
+}
+
+.logo-white {
+  content: url("../img/hubspot-logo-footer.svg");
+  width: 30px;
 }
