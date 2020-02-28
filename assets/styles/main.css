@@ -39,22 +39,34 @@ a {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .clearfix::after{
   display: table;
   content: "";
   clear: both;
 }
 
+.rel {
+  position: relative;
+}
+
 .spacer-top {
-  margin-top: 5%;
+  margin-top: 6%;
 }
 
 .spacer-btm {
-  margin-bottom: 5%;
+  margin-bottom: 6%;
+}
+
+.inner-spacer {
+  padding: 3%;
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin:auto;
 }
 
@@ -84,7 +96,11 @@ a {
 }
 
 .col-3{
-  width: calc(100% / 3);
+  width: calc((100% / 3) - 20px);
+}
+
+.col-3:nth-of-type(2) {
+  margin: 0 30px;
 }
 
 .col-4 {
@@ -94,12 +110,10 @@ a {
 
 .col-1trd {
   width: calc(100% / 3);
-  background-color: white;
 }
 
 .col-2trd {
   width: calc((100% / 3)*2);
-  background-color: black;
 }
 
 /*Typography*/
@@ -109,19 +123,34 @@ h2,
 h3,
 h4,
 p,
+ul,
 a {
   font-family: 'Muli', sans-serif;
   color: #32495b;
+  line-height: 1.5;
 }
 
 h1 {
   font-size: 48px;
-  font-weight: 900;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
 }
 
 h1,
-p {
-  line-height: 1.5;
+h2,
+h3,
+h4 {
+  font-weight: 900;
 }
 
 .discl {
@@ -176,6 +205,11 @@ p {
   background-color: #555;
 }
 
+.box-fill {
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 20px 5px #e6ecf1;
+}
 /*Images*/
 
 .img-testimonial {
@@ -187,7 +221,7 @@ p {
 }
 
 .img-small {
-  height: 50px;
+  height: 100px;
 }
 
 .img-tiny {
@@ -196,6 +230,10 @@ p {
 
 .img-lilliput {
   width: 25%;
+}
+
+.img-adapt {
+
 }
 
 .logo {
@@ -249,8 +287,6 @@ p {
 
 /*Jumbotron & header*/
 
-
-
 #jumbotron {
   height: 95vh;
   background-image: url("../img/jumbotron.png");
@@ -267,14 +303,41 @@ p {
   border-bottom: 2px solid #33475b;
 }
 
-/* Widgets*/
+/* Widgets */
 
-.h4::after {
+.inline-h4::after {
+  position: absolute;
   content: "";
-  width: 80%;
-  height: 1px;
-  color: lime;
-  background-color: lime;
+  width: 70%;
+  height: 2px;
+  color: black;
+  background-color: black;
+  top: 50%;
+}
+
+.top-h4 {
+  border-top: 2px solid black;
+  padding-top: 10px;
+}
+
+.custom-ul {
+  padding: 0;
+}
+
+.custom-li {
+  text-align: left;
+  list-style: none;
+  padding-right: 1.2em;
+}
+
+.custom-li:before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #fe775a;
+  margin-left: -1.2em;
+  width: 1.2em;
+  padding: 1.2em;
 }
 
 /*Footer*/
