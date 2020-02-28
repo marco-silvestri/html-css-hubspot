@@ -11,6 +11,10 @@ section {
   height: calc(100vh - 2%);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
