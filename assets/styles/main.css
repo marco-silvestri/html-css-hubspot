@@ -7,12 +7,10 @@
 }
 
 header,
-section {
+section,
+.jumbotron-btm,
+#metatable {
   height: calc(100vh - 2%);
-}
-
-body {
-  overflow-x: hidden;
 }
 
 a {
@@ -70,7 +68,7 @@ a {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin:auto;
 }
 
@@ -109,7 +107,6 @@ a {
 
 .col-4 {
   width: calc(100% / 4);
-  background-color: gray;
 }
 
 .col-1trd {
@@ -161,6 +158,12 @@ h4 {
   font-size: 10px;
 }
 
+#metatable.bg-gradient h3,
+#metatable.bg-gradient h2,
+#metatable.bg-gradient p {
+  color: #FFF;
+}
+
 /*Buttons*/
 
 .btn{
@@ -194,7 +197,7 @@ h4 {
 }
 
 .bg-gradient {
- background-image: linear-gradient(60deg, #8cf2ff, #8cffcf );
+ background-image: linear-gradient(60deg, #00a9b9, #00bba7 );
 }
 
 .bg-white {
@@ -300,7 +303,6 @@ h4 {
 }
 
 .jumbotron-btm {
-  width: 100vw;
   height: 10vh;
   background-color: #afebe4;
   border-top: 2px solid #33475b;
@@ -312,7 +314,7 @@ h4 {
 .inline-h4::after {
   position: absolute;
   content: "";
-  width: 70%;
+  width: 65%;
   height: 2px;
   color: black;
   background-color: black;
@@ -342,6 +344,44 @@ h4 {
   margin-left: -1.2em;
   width: 1.2em;
   padding: 1.2em;
+}
+
+/*Metatable*/
+
+#metatable.bg-gradient .col-4:nth-of-type(1){
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+
+#metatable.bg-gradient .col-4:nth-of-type(2) {
+  border-top: 1px solid transparent;
+}
+
+#metatable.bg-gradient .col-4:nth-of-type(3) {
+  border-top: 1px solid transparent;
+}
+
+#metatable.bg-gradient .col-4:nth-of-type(4) {
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+#metatable.bg-gradient .col-4:nth-of-type(5) {
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+
+#metatable.bg-gradient .col-4:nth-of-type(6) {
+  border-bottom: 1px solid transparent;
+}
+
+#metatable.bg-gradient .col-4:nth-of-type(7) {
+  border-bottom: 1px solid transparent;
+}
+
+#metatable.bg-gradient .col-4:nth-of-type(8) {
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
 }
 
 /*Footer*/
