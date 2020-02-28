@@ -8,59 +8,58 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="bg-orange">
-      <nav class="bg-gray top-nav paddingY">
-        <!-- First TOPNAV -->
-        <div class="container clearfix">
-          <div class="col-2 lx">
-            <ul class="menu-item">
-              <li class="inline-block language dropdown"><a href="#">English</a></li>
-              <li class="inline-block pipe"><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <!-- TOPNAV login section -->
-          <div class="col-2r">
-            <ul class="menu-item">
-              <li class="inline-block"><a class="btn-search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-              <li class="inline-block"><a class="btn" href="#">Log in</a></li>
-              <li class="inline-block"><a class="btn btn-orange" href="#">GetHubSpotFree</a></li>
-            </ul>
-          </div>
+    <!-- First TOPNAV -->
+    <nav class="bg-gray nav-separator">
+      <div class="container clearfix">
+        <div class="col-2 lx">
+          <ul class="menu-item">
+            <li class="inline-block language dropdown"><a href="#">English</a></li>
+            <li class="inline-block pipe"><a href="#">Contact Us</a></li>
+          </ul>
         </div>
-      </nav>
-      <!-- This nav is here for future implementation of scrolling/sticky/fixed -->
-      <nav class="bg-white paddingY">
-        <div class="container clearfix">
-          <!-- Second TOPNAV -->
-          <div class="col-2 lx">
-            <img class="logo" src="" alt="">
-          </div>
-          <div class="col-2r">
-            <ul class="menu-item">
-              <li class="inline-block dropdown"><a href="#">Software</a></li>
-              <li class="inline-block"><a href="#">Pricing</a></li>
-              <li class="inline-block dropdown"><a href="#">Resources</a></li>
-              <li class="inline-block dropdown"><a href="#">Partners</a></li>
-              <li class="inline-block dropdown"><a href="#">About</a></li>
-            </ul>
-          </div>
+        <!-- TOPNAV login section -->
+        <div class="col-2r">
+          <ul class="menu-item">
+            <li class="inline-block"><a class="btn-search" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li class="inline-block"><a class="btn" href="#">Log in</a></li>
+            <li class="inline-block"><a class="btn btn-orange" href="#">GetHubSpotFree</a></li>
+          </ul>
         </div>
-      </nav>
-      <!-- Jumbotron -->
-      <div id="jumbotron">
-        <div class="container clearfix">
-          <!-- Text + button -->
-          <div class="col-2 lx paddingY">
-            <h1 class="spacer-top spacer-btm">There&apos;s a better way to grow.</h1>
-            <p class="spacer-top spacer-btm">Marketing&comma; sales&comma; and service software that helps your business grow without compromise&period; Because &quot;good for the business&quot; should also mean &quot;good for the customer&period;&quot;</p>
-            <a class="btn btn-orange btn-large spacer-top spacer-btm" href="#">GetHubSpotFree</a>
-            <p class="discl spacer-top">Get started with FREE tools&comma; and upgrade as you grow&period;</p>
-          </div>
-        </div>}
       </div>
-      <div class="jumbotron-btm">
+    </nav>
+    <!-- Second TOPNAV, sticky -->
+    <nav class="bg-white sticky-top">
+      <div class="container clearfix">
+        <div class="col-2 lx">
+          <img class="logo" src="" alt="">
+        </div>
+        <div class="col-2r">
+          <ul class="menu-item">
+            <li class="inline-block dropdown"><a href="#">Software</a></li>
+            <li class="inline-block"><a href="#">Pricing</a></li>
+            <li class="inline-block dropdown"><a href="#">Resources</a></li>
+            <li class="inline-block dropdown"><a href="#">Partners</a></li>
+            <li class="inline-block dropdown"><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Jumbotron -->
+    <header id="jumbotron" class="bg-orange">
+      <div class="container clearfix">
+        <!-- Text + button -->
+        <div class="col-2 lx paddingY5">
+          <h1 class="paddingY">There&apos;s a better way to grow.</h1>
+          <p class="paddingY">Marketing&comma; sales&comma; and service software that helps your business grow without compromise&period; Because &quot;good for the business&quot; should also mean &quot;good for the customer&period;&quot;</p>
+          <div class="paddingY">
+            <a class="btn btn-orange btn-large spacer-top spacer-btm" href="#">GetHubSpotFree</a>
+          </div>
+          <p class="discl paddingY">Get started with FREE tools&comma; and upgrade as you grow&period;</p>
+        </div>
       </div>
     </header>
+    <div class="jumbotron-btm">
+    </div>
     <main>
       <!-- First section -->
       <section class="bg-gray">
@@ -72,15 +71,15 @@
         <!-- Sub-section with 2 asym columns -->
         <div class="container clearfix paddingY box-fill">
           <div class="col-1trd lx centered paddingY clearfix">
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <img class="img-small spacer-btm" src="assets/img/CRM-Illustration.svg" alt="Learn more">
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <a class="btn btn-orange btn-large paddingY spacer-top" href="#">Learn more</a>
             </div>
           </div>
           <div class="col-2trd lx">
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <h3 class="paddingY">Free HubSpot CRM</h3>
               <p class="paddingY">Everything you need to organize&comma; track&comma; and build better relationships with leads and customer&period; Yes&comma; it&apos; 100&percnt; free&period; Forever&period;</p>
               <h4 class="inline-h4 paddingY rel">POPULAR FEATURE</h4>
@@ -99,78 +98,78 @@
         <div class="container clearfix paddingY">
           <!--Marketing hub -->
           <div class="col-3 lx centered box-fill">
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <img class="img-small" src="assets/img/Marketing-Hub-Free.svg" alt="Marketing">
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <h3>Marketing Hub</h3>
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <p>Marketing software to help you grow traffic&comma; convert more visitors&comma; and run complete inbound marketing campaigns at scale&period;</p>
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <h4 class="top-h4">POPULAR FEATURE</h4>
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <ul class"custom-ul">
                 <li class="custom-li">Lead Generation</li>
                 <li class="custom-li">Marketing Automation</li>
                 <li class="custom-li">Analytics</li>
               </ul>
             </div>
-            <div class="inner-spacer spacer-btm">
+            <div class="paddingXY3 spacer-btm">
               <!-- Meta button -->
               <a class="btn btn-orange btn-large" href="#">Learn more</a>
             </div>
           </div>
           <!--Sales hub -->
           <div class="col-3 lx centered box-fill">
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <img class="img-small" src="assets/img/Sales-Professional-Illustration.svg" alt="Sales">
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <h3>Sales Hub</h3>
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <p>Time&dash;saving sales software that helps you get deeper insights into prospects&comma; automate the tasks you hate&comma; and close more deals faster&period;</p>
             </div>
-            <div class="inner-spacer rel">
+            <div class="paddingXY3">
               <h4 class="top-h4">POPULAR FEATURE</h4>
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <ul class"custom-ul">
                 <li class="custom-li">Email Tracking</li>
                 <li class="custom-li">Meeting Scheduling</li>
                 <li class="custom-li">Email Automation</li>
               </ul>
             </div>
-            <div class="inner-spacer spacer-btm">
+            <div class="paddingXY3 spacer-btm">
               <!-- Meta button -->
               <a class="btn btn-orange btn-large" href="#">Learn more</a>
             </div>
           </div>
           <!--Service hub -->
           <div class="col-3 lx centered box-fill">
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <img class="img-small" src="assets/img/Service-Hub-Illustration.svg" alt="Service">
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <h3>Service Hub</h3>
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <p>Customer service software to help you connect with customers&comma; exceed expectations&comma; and turn them into promoters that grow your business&period;</p>
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <h4 class="top-h4">POPULAR FEATURE</h4>
             </div>
-            <div class="inner-spacer">
+            <div class="paddingXY3">
               <ul class"custom-ul">
                 <li class="custom-li">Tickets</li>
                 <li class="custom-li">Customer Feedback</li>
                 <li class="custom-li">Knowledge Base</li>
               </ul>
             </div>
-            <div class="inner-spacer spacer-btm">
+            <div class="paddingXY3 spacer-btm">
               <!-- Meta button -->
               <a class="btn btn-orange btn-large" href="#">Learn more</a>
             </div>
@@ -184,42 +183,42 @@
           <p>You don&apos;t have to go it alone&period; Master the inbound methodology and get the most out of your tools with HubSpot&apos;s legendary customer support team and a community of thousands of marketing and sales pros just like you&period;</p>
         </div>
         <div class="container clearfix paddingY">
-          <div class="col-4 lx centered tinywhite inner-spacer">
+          <div class="col-4 lx centered tinywhite paddingXY3">
             <img class="img-tiny" src="assets/img/homepage_community_agency.svg" alt="">
             <h3>150&plus;</h3>
             <p class="discl">HubSpot user groups</p>
           </div>
-          <div class="col-4 lx centered tinywhite inner-spacer">
+          <div class="col-4 lx centered tinywhite paddingXY3">
             <img class="img-tiny" src="assets/img/homepage_community_blog.svg" alt="">
             <h3>4&period;5M&plus;</h3>
             <p class="discl">monthly visits</p>
           </div>
-          <div class="col-4 lx centered tinywhite inner-spacer">
+          <div class="col-4 lx centered tinywhite paddingXY3">
             <img class="img-tiny" src="assets/img/homepage_community_academy.svg" alt="">
             <h3>155K&plus;</h3>
             <p class="discl">certified professionals</p>
           </div>
-          <div class="col-4 lx centered tinywhite inner-spacer">
+          <div class="col-4 lx centered tinywhite paddingXY3">
             <img class="img-tiny" src="assets/img/homepage_community_inbound.svg" alt="">
             <h3>21K&plus;</h3>
             <p class="discl">registered attendees</p>
           </div>
-            <div class="col-4 lx centered tinywhite inner-spacer">
+            <div class="col-4 lx centered tinywhite paddingXY3">
               <img class="img-tiny" src="assets/img/homepage_community_connect.svg" alt="">
               <h3>200&plus;</h3>
               <p class="discl">integrations</p>
             </div>
-            <div class="col-4 lx centered tinywhite inner-spacer">
+            <div class="col-4 lx centered tinywhite paddingXY3">
               <img class="img-tiny" src="assets/img/homepage_community_globe.svg" alt="">
               <h3>6&plus;</h3>
               <p class="discl">languages</p>
             </div>
-            <div class="col-4 lx centered tinywhite inner-spacer">
+            <div class="col-4 lx centered tinywhite paddingXY3">
               <img class="img-tiny" src="assets/img/homepage_community_followers.svg" alt="">
               <h3>2&period;6M&plus;</h3>
               <p class="discl">social followers</p>
             </div>
-            <div class="col-4 lx centered tinywhite inner-spacer">
+            <div class="col-4 lx centered tinywhite paddingXY3">
               <img class="img-tiny" src="assets/img/growthhub-white-small.svg" alt="">
               <h3>5K&plus;</h3>
               <p class="discl">profiles and counting</p>
@@ -229,46 +228,46 @@
       <!-- Fourth section -->
       <section id="testimonials" class="bg-white">
         <div class="container-sm clearfix paddingY">
-          <div class="col-1trd lx inner-spacer">
+          <div class="col-1trd lx paddingXY3">
             <h3 class="spacer-top spacer-btm">64&comma;500</h3>
             <p>customers in over <strong>100</strong> countries growing their businesses with HubSpot</p>
           </div>
-          <div class="col-2trd lx inner-spacer clearfix">
+          <div class="col-2trd lx paddingXY3 clearfix">
             <div class="mover">
               <div class="col-4">
-                <img class="img-lilliput" src="assets/img/Atlassian-horizontal-blue.webp" alt="Atlassian Logo">
+                <img class="img-adapt" src="assets/img/Atlassian-horizontal-blue.webp" alt="Atlassian Logo">
               </div>
               <div class="col-4">
-                <img class="img-lilliput" src="assets/img/doordash_owler.webp" alt="Doordash Logo">
+                <img class="img-adapt" src="assets/img/doordash_owler.webp" alt="Doordash Logo">
               </div>
               <div class="col-4">
-                <img class="img-lilliput" src="assets/img/g2crowd.webp" alt="G2 Crowd Logo">
+                <img class="img-adapt" src="assets/img/g2crowd.webp" alt="G2 Crowd Logo">
               </div>
               <div class="col-4">
-                <img class="img-lilliput" src="assets/img/purple-logo.webp" alt="Purple Logo">
+                <img class="img-adapt" src="assets/img/purple-logo.webp" alt="Purple Logo">
               </div>
               <div class="col-4">
-                <img class="img-lilliput" src="assets/img/Subaru_Logo.webp" alt="Subaru Logo">
+                <img class="img-adapt" src="assets/img/Subaru_Logo.webp" alt="Subaru Logo">
               </div>
               <div class="col-4">
-                <img class="img-lilliput" src="assets/img/Wistia_logo.webp" alt="Wistia Logo">
+                <img class="img-adapt" src="assets/img/Wistia_logo.webp" alt="Wistia Logo">
               </div>
               <div class="col-4">
-                <img class="img-lilliput" src="assets/img/Classpass-logo.webp" alt="Classpass Logo">
+                <img class="img-adapt" src="assets/img/Classpass-logo.webp" alt="Classpass Logo">
               </div>
               <div class="col-4">
-                <img class="img-lilliput" src="assets/img/VMware_logo.webp" alt="VMware Logo">
+                <img class="img-adapt" src="assets/img/VMware_logo.webp" alt="VMware Logo">
               </div>
             </div>
           </div>
         </div>
         <div class="container clearfix paddingY">
           <div class="col-2 lx paddingY">
-            <div class="inner-spacer paddingY">
+            <div class="paddingXY3 paddingY">
               <h3 class="paddingY">Start Growing With HubSpot Today</h3>
               <p class="paddingY">With tools to make every part of your process more human and a support team excited to help you&comma; getting started with inbound has never been easier&period;</p>
             </div>
-            <div class="paddingY inner-spacer">
+            <div class="paddingY paddingXY3">
               <a class="btn btn-orange btn-large" href="#">GetHubSpotFree</a>
             </div>
             <p class="discl paddingY"> Get started with FREE tools&comma; or get more with our premium software&period;</p>

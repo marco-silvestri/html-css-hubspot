@@ -8,7 +8,6 @@
 
 header,
 section,
-.jumbotron-btm,
 #metatable {
   height: calc(100vh - 2%);
 }
@@ -55,17 +54,7 @@ a {
   position: relative;
 }
 
-.spacer-top {
-  margin-top: 6%;
-}
-
-.spacer-btm {
-  margin-bottom: 6%;
-}
-
-.inner-spacer {
-  padding: 3%;
-}
+/*Wrappers*/
 
 .container {
   width: 80%;
@@ -81,8 +70,26 @@ a {
   text-align: center;
 }
 
+/*Spacers*/
+
 .paddingY {
   padding: 3% 0;
+}
+
+.paddingY5 {
+  padding: 5% 0;
+}
+
+.paddingXY3{
+  padding: 3%;
+}
+
+.spacer-top {
+  margin-top: 6%;
+}
+
+.spacer-btm {
+  margin-bottom: 6%;
 }
 
 /*Columns*/
@@ -211,7 +218,7 @@ h4 {
 }
 
 .bg-orange {
-  background-color: #fff1ee;
+  background-color: #fff4ef;
 }
 
 .bg-dgray {
@@ -241,7 +248,7 @@ h4 {
   height: 35px;
 }
 
-.img-lilliput {
+.img-adapt {
   max-width: 100px;
 }
 
@@ -256,16 +263,29 @@ h4 {
   border: 1px solid white;
 }
 
-/*TOP NAV*/
+/*Top Novigation Bar*/
 
-.top-nav {
+.sticky-top {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+.nav-separator {
   border-bottom: 2px solid #32495b;
+}
+
+.sticky-top,
+.nav-separator {
+  padding: 20px 0;
 }
 
 .menu-item {
   list-style: none;
   font-size: 18px;
 }
+
+/*Pseudo-Elements for the Top Navigation Bar*/
 
 .dropdown::after {
   font-family: "Font Awesome 5 Free";
@@ -298,15 +318,15 @@ h4 {
 /*Jumbotron & header*/
 
 #jumbotron {
-  height: 95vh;
+  height: 625px;
   background-image: url("../img/jumbotron.png");
-  background-size: 110%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 100% -1%;
+  background-position: 100% 0%;
 }
 
 .jumbotron-btm {
-  height: 10vh;
+  height: 85px;
   background-color: #afebe4;
   border-top: 2px solid #33475b;
   border-bottom: 2px solid #33475b;
