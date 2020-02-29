@@ -7,8 +7,7 @@
 }
 
 header,
-section,
-#metatable {
+section {
   height: calc(100vh - 2%);
 }
 
@@ -32,16 +31,8 @@ a {
   float: left;
 }
 
-.block {
-  display: block;
-}
-
 .inline-block {
   display: inline-block;
-}
-
-.inline {
-  display: inline;
 }
 
 .clearfix::after{
@@ -165,10 +156,17 @@ h4 {
   font-size: 10px;
 }
 
-#metatable.bg-gradient h3,
-#metatable.bg-gradient h2,
-#metatable.bg-gradient p {
+#infographic h2,
+#infographic p,
+#metatable h3,
+#metatable p {
   color: #FFF;
+  padding: 1%;
+}
+
+#metatable h3,
+#metatable p {
+  line-height: 2;
 }
 
 /*Buttons*/
@@ -257,6 +255,11 @@ h4 {
   width: 30px;
 }
 
+.logo-white {
+  content: url("../img/hubspot-logo-footer.svg");
+  width: 30px;
+}
+
 /*Borders*/
 
 .tinywhite {
@@ -283,6 +286,10 @@ h4 {
 .menu-item {
   list-style: none;
   font-size: 18px;
+}
+
+.menu-item a {
+  padding-left: 20px;
 }
 
 /*Pseudo-Elements for the Top Navigation Bar*/
@@ -332,12 +339,27 @@ h4 {
   border-bottom: 2px solid #33475b;
 }
 
-/* Widgets */
+/*Free CRM*/
+
+#free-crm h2,
+#free-crm h3,
+#free-crm h4,
+#free-crm p,
+#free-crm ul {
+  padding: 1% 0;
+}
+
+#free-crm .custom-li {
+  display: inline-block;
+}
+
+/*Widgets*/
 
 .inline-h4::after {
   position: absolute;
   content: "";
-  width: 65%;
+  margin-left: 10%;
+  width: 50%;
   height: 2px;
   color: black;
   background-color: black;
@@ -371,39 +393,19 @@ h4 {
 
 /*Metatable*/
 
-#metatable.bg-gradient .col-4:nth-of-type(1){
+#metatable .col-4[data-row="top"]{
   border-top: 1px solid transparent;
+}
+
+#metatable .col-4[data-row="btm"]{
+  border-bottom: 1px solid transparent;
+}
+
+#metatable .col-4[data-pos="start"]{
   border-left: 1px solid transparent;
 }
 
-#metatable.bg-gradient .col-4:nth-of-type(2) {
-  border-top: 1px solid transparent;
-}
-
-#metatable.bg-gradient .col-4:nth-of-type(3) {
-  border-top: 1px solid transparent;
-}
-
-#metatable.bg-gradient .col-4:nth-of-type(4) {
-  border-top: 1px solid transparent;
-  border-right: 1px solid transparent;
-}
-
-#metatable.bg-gradient .col-4:nth-of-type(5) {
-  border-bottom: 1px solid transparent;
-  border-left: 1px solid transparent;
-}
-
-#metatable.bg-gradient .col-4:nth-of-type(6) {
-  border-bottom: 1px solid transparent;
-}
-
-#metatable.bg-gradient .col-4:nth-of-type(7) {
-  border-bottom: 1px solid transparent;
-}
-
-#metatable.bg-gradient .col-4:nth-of-type(8) {
-  border-bottom: 1px solid transparent;
+#metatable .col-4[data-pos="end"]{
   border-right: 1px solid transparent;
 }
 
@@ -426,28 +428,23 @@ h4 {
  padding-bottom: 40px;
 }
 
-.p-link {
+.p-link,
+.lang-link,
+.social-icon {
   font-size: 15px;
   color: #cbd6e2;
   line-height: 2;
   margin-right: 20px;
-
 }
 
-.social-icon {
-  color: #cbd6e2;
-  padding-right: 20px;
+#about .p-link {
+  display: block;
 }
 
 .b-b{
   border-bottom: 1px solid #cbd6e2;
   padding: 20px 0;
   margin: 20px 0;
-}
-
-.logo-white {
-  content: url("../img/hubspot-logo-footer.svg");
-  width: 30px;
 }
 
 .footer-r {
